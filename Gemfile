@@ -1,9 +1,11 @@
 source "https://rubygems.org"
+
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
 gem "rubocop", "~> 0.54.0", require: false
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem "bootstrap-sass", "3.3.7"
 gem "rails", "~> 5.2.1"
 # Use Puma as the app server
 gem "puma", "~> 3.11"

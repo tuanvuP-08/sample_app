@@ -69,10 +69,17 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Use a different logger for distributed setups.
+<<<<<<< HEAD
   # require "syslog/logger"
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger = ActiveSupport::Logger.new(STDOUT)
+=======
+  # require 'syslog/logger'
+
+  if ENV['RAILS_LOG_TO_STDOUT'].present?
+    logger           = ActiveSupport::Logger.new(STDOUT)
+>>>>>>> Chapter 5: Filling in the layout
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
