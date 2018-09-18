@@ -1,6 +1,12 @@
 en:
 
+  error_count:
+    one: "The form contains %{count} error."
+    other: "The form contains %{count} errors."
+
   base_title: Ruby on Rails Tutorial Sample App
+  welcome: Welcome to the Sample App!
+  user_not_found: User not found!
 
   about: About
   help: Help
@@ -42,7 +48,11 @@ en:
       contact_page_url: http://www.railstutorial.org/contact
   users:
     new:
-      content: This will be a signup page for new users.
+      create_account_btn: Create my account!
+      field_name: Name
+      field_email: Email
+      field_password: Password
+      field_comfirm_password: Confirmation
   layouts:
     footer:
       content_1: The
