@@ -2,5 +2,25 @@
 
 <p>
   <h1><%= t("signup") %></h1>
-  <%= t ".content" %>
+  <div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @user do |f| %>
+      <%= render "shared/error_messages" %>
+
+      <%= f.label t(".field_name") %>
+      <%= f.text_field :name, class: "form-control" %>
+
+      <%= f.label t(".field_email") %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label t(".field_password") %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label t(".field_comfirm_password") %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+
+      <%= f.submit t(".create_account_btn"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
 </p>
