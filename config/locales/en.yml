@@ -7,12 +7,16 @@ en:
   base_title: Ruby on Rails Tutorial Sample App
   welcome: Welcome to the Sample App!
   user_not_found: User not found!
+  invalid_email_or_password: Invalid email/password combination
 
   about: About
   help: Help
   home: Home
   contact: Contact
   signup: Sign up
+  login: Log in
+  field_email: Email
+  field_password: Password
 
   rails_tutorial: https://www.railstutorial.org/
   rails_tutorial_book: http://www.railstutorial.org/book
@@ -50,8 +54,6 @@ en:
     new:
       create_account_btn: Create my account!
       field_name: Name
-      field_email: Email
-      field_password: Password
       field_comfirm_password: Confirmation
   layouts:
     footer:
@@ -63,3 +65,12 @@ en:
       new: New
     header:
       sample_app: sample app
+      profile: Profile
+      users: Users
+      settings: Settings
+      logout: Log out
+      account: Account
+  sessions:
+    new:
+      content_1: New user?
+      content_2: Sign up now!
