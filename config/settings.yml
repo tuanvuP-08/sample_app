@@ -18,3 +18,20 @@ view_users:
 
 ctrl_users:
   num_users_per_page: 30
+
+model_micropost:
+  content_max_len: 140
+  picture_size: 5
+
+view_micropost:
+  gravatar_size: 50
+
+shared_micropostform:
+  pic_format: image/jpeg,image/gif,image/png
+
+shared_userinfo:
+  gravatar_size: 50
+
+app_models:
+  user:
+    password_reset_expired: 2

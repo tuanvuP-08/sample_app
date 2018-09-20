@@ -5,11 +5,14 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page],
+    @users = User.sort_by_desc.paginate page: params[:page],
       per_page: Settings.ctrl_users.num_users_per_page
   end
 
-  def show; end
+  def show
+    @user = User.find_by id: params[:id]
+    @microposts = @user.microposts.paginate(page: params[:page])
+  end
 
   def edit; end
 

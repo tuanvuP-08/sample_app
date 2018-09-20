@@ -4,6 +4,10 @@ en:
     one: "The form contains %{count} error."
     other: "The form contains %{count} errors."
 
+  microposts_count:
+    one: "%{count} micropost"
+    other: "%{count} microposts"
+
   # main titles
   base_title: Ruby on Rails Tutorial Sample App
 
@@ -22,6 +26,9 @@ en:
   cant_be_empty: can't be empty
   password_reset_successfully: Password has been reset.
   expired_password: Password reset has expired.
+  micropost_created: Micropost created!
+  micropost_deleted: Micropost deleted
+  picture_size_too_large: should be less than 5MB
 
   # other
   email_active_subject: Account activation
@@ -71,6 +78,7 @@ en:
       ruby_title: Ruby on Rails Tutorial
       content_2: sample application.
       content_3: Sign up now!
+      content_4: Micropost Feed
     contact:
       content_1: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_page_title: contact page.
@@ -87,6 +95,8 @@ en:
       edit_title: Update your profile
       save_changes_btn: Save changes
       change: change
+    show:
+      micropost: Microposts
 
   layouts:
     footer:
@@ -137,3 +147,16 @@ en:
     new:
       title: Forgot password
       submit_btn: Submit
+
+  microposts:
+    micropost:
+      content_1: Posted
+      content_2: ago.
+      delete_btn: delete
+      delete_arlert: You sure???
+
+  shared:
+    micropost_form:
+      content_1: Compose new micropost here
+    user_info:
+      content_1: view my profile!

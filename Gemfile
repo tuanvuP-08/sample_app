@@ -18,6 +18,8 @@ gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "jquery-rails"
 gem "faker"
+gem "carrierwave"
+gem "mini_magick"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
 
@@ -46,6 +48,7 @@ end
 
 group :production do
   gem "pg", "0.18.4"
+  gem "fog"
 end
 
 gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
