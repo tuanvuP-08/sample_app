@@ -5,3 +5,7 @@ user:
     max_len: 255
   password:
     min_len: 6
+
+remember_status:
+  is_true: "1"
+  is_false: "0"
