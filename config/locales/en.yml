@@ -1,5 +1,10 @@
 en:
 
+  # controllers
+  users_controller:
+    followings: Following
+    followers: Followers
+
   error_count:
     one: "The form contains %{count} error."
     other: "The form contains %{count} errors."
@@ -97,6 +102,13 @@ en:
       change: change
     show:
       micropost: Microposts
+    unfollow:
+      unfollow_btn: Unfollow
+    follow:
+      follow_btn: Follow
+    show_follow:
+      content_1: view my profile!!!!
+      content_2: "micropost:"
 
   layouts:
     footer:
@@ -159,4 +171,7 @@ en:
     micropost_form:
       content_1: Compose new micropost here
     user_info:
-      content_1: view my profile!
+      content_1: view my profile!!!!
+    stats:
+      following: following
+      followers: followers
