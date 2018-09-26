@@ -9,3 +9,12 @@ user:
 remember_status:
   is_true: "1"
   is_false: "0"
+
+users_helper:
+  size: 80
+
+view_users:
+  gravatar_size: 50
+
+ctrl_users:
+  num_users_per_page: 30
