@@ -4,14 +4,24 @@ en:
     one: "The form contains %{count} error."
     other: "The form contains %{count} errors."
 
+  # main titles
   base_title: Ruby on Rails Tutorial Sample App
-  welcome: Welcome to the Sample App!
+
+  # messages to show
+  active_message: Please check your email to activate your account.
   invalid_email_or_password: Invalid email/password combination.
   update_successfully: Update successfully.
   delete_successfully: Delete successfully.
   not_login_yet: Please log in.
   error_message: Something went wrong!
+  account_active_successfully: Account activated!
+  invalid_active_link: Invalid activation link
+  account_not_actived: Account not activated. Check your email for the activation link.
 
+  # other
+  email_active_subject: Account activation
+
+  # page titles
   about: About
   help: Help
   home: Home
@@ -20,11 +30,13 @@ en:
   login: Log in
   all_users: All users
 
+  # form field name
   field_name: Name
   field_email: Email
   field_password: Password
   field_comfirm_password: Confirmation
 
+  # links
   rails_tutorial: https://www.railstutorial.org/
   rails_tutorial_book: http://www.railstutorial.org/book
   ruby_on_rails: https://rubyonrails.org/
@@ -57,6 +69,7 @@ en:
       content_1: Contact the Ruby on Rails Tutorial about the sample app at the
       contact_page_title: contact page.
       contact_page_url: http://www.railstutorial.org/contact
+
   users:
     new:
       create_account_btn: Create my account!
@@ -78,14 +91,23 @@ en:
       michael_url: https://www.michaelhartl.com/
       new: New
     header:
-      sample_app: sample app
+      sample_app: Sample app
       profile: Profile
       users: Users
       settings: Settings
       logout: Log out
       account: Account
+
   sessions:
     new:
       content_1: New user?
       content_2: Sign up now!
       content_3: Remember me on this computer
+
+  user_mailer:
+    account_activation:
+      title: Sample App
+      hi: Hi
+      content_1: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      active: Activate
