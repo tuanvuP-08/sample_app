@@ -1,7 +1,9 @@
 class User < ApplicationRecord
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+
   attr_accessor :remember_token, :activation_token, :reset_token
 
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+  has_many :microposts, dependent: :destroy
 
   validates :name,  presence: true,
     length: {maximum: Settings.user.name.max_len}
@@ -16,6 +18,8 @@ class User < ApplicationRecord
   before_save{email.downcase!}
   before_save :downcase_email
   before_create :create_activation_digest
+
+  scope :sort_by_desc, ->{order(created_at: :desc)}
 
   def self.digest string
     cost =
@@ -66,7 +70,15 @@ class User < ApplicationRecord
   end
 
   def password_reset_expired?
-    reset_sent_at < 1.hours.ago
+    reset_sent_at < Settings.app_models.user.password_reset_expired.hours.ago
+  end
+
+  def feed
+    Micropost.sort_by_userid id
+  end
+
+  def check_pw_empty? password
+    password.empty?
   end
 
   private
